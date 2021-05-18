@@ -7,7 +7,7 @@ from time import time
 def get_random_request():
     """
     Return random request
-    :return: dict
+    :rtype: dict
     """
     # generate data for request
     req_type = random.choice(list(RequestType)).value
@@ -22,7 +22,7 @@ def get_random_request():
 def _get_random_date():
     """
     Generate random date roughly between now and 10 days ago
-    :return: datetime.datetime
+    :rtype: datetime.datetime
     """
     rand_ts = random.randint(0, 999999)
     return datetime.fromtimestamp(time() - rand_ts)
@@ -35,7 +35,7 @@ def _get_random_content(req_type):
     :param req_type: request type
     :type req_type: RequestType
 
-    :return: str
+    :rtype: str
     """
     if req_type == RequestType.TEXT.value:
         return random.choice(DUMMY_MESSAGES)
