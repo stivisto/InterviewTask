@@ -29,14 +29,14 @@ Each type of the request needs to be processed differently:
 
 ### `text` requests
 
-##### If request was sent on the weekend (see `"ts"` field to determine when it was sent):
+#### If request was sent on the weekend (see `"ts"` field to determine when it was sent):
 Print what day of the week it was sent on, using emoji:
 - Monday: 1️⃣
 - Tuesday: 2️⃣
 - ...
 - Sunday: 7️⃣
 
-##### Otherwise:
+#### Otherwise:
 Print number of words in content, without counting the same word twice.
 Examples:
 - for message `"hi you how are you"` we print "4", because there are 4 unique words: hi, you, how, are.
@@ -46,17 +46,17 @@ Note: it's up to you how to deal with uppercase/lowercase, and with comma, quest
 
 ### `image` requests
 
-##### If file extension is JPG:
+#### If file extension is JPG:
 Remove file extension and print the rest of the file name.
 
-##### Otherwise:
+#### Otherwise:
 Print request's timestamp, but subtract 24 hours.
 
 ### `video` requests
-##### If request was sent on the weekend:
+#### If request was sent on the weekend:
 Print `OK` if file extension contains 4 characters (e.g. ".webm"). Otherwise print `REJECT`
 
-##### Otherwise:
+#### Otherwise:
 Print `OK` if file extension contains 3 characters (e.g. ".mp4"). Otherwise print `REJECT`
 
 ### `sound` requests
