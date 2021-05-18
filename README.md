@@ -30,10 +30,8 @@ Each type of the request needs to be processed differently:
 ### `text` requests
 
 #### If request was sent on the weekend (see `"ts"` field to determine when it was sent):
-Print what day of the week it was sent on, using emoji:
-- Monday: 1️⃣
-- Tuesday: 2️⃣
-- ...
+Print the emoji corresponding to what day of the week it was sent on:
+- Saturday: 6️⃣
 - Sunday: 7️⃣
 
 #### Otherwise:
