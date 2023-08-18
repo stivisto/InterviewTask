@@ -1,10 +1,3 @@
-# Task requirements
-- Don't spend more than one hour on this task. One hour is enough for us to get a good idea of your coding skills, and I am sure you have better things to do 🙂
-- When working on this task, feel free to use any resources, except for getting help from other people
-- If you copied part of the solution from somewhere, leave the link to the source in comments
-- If you write comments, please write them in English
-- Use git while working on this task, like you would if this was real work. We will be looking at the commits
-- Submit your solution as a git repository (Github link is preferred, but any other way is fine)
 # Task description
 
 Write a script that processes requests from a server. Instead of using a real server, requests will come from `get_random_request()` (see `dummy_server/server.py`).
